@@ -113,6 +113,7 @@ margin-right: 52px;
 /*design for smartphones*/
 @media(max-width: 450px) and (max-width: 800px) {
 
+  
   .card-container, body {
     margin: 0;
     padding-top: 22px;
@@ -147,12 +148,16 @@ margin-right: 52px;
     background-blend-mode: overlay;
     border-radius: 8px 8px 0px 0px;
   }
-
-  .card-number-info, .card-number-grid, .card-number {
+  .card-container .card-centered .card-number {
+    display: block;
+  }
+  .card-container .card-centered .card-number-info {
     
     display: block;
   }
-
+  .card-container .card-centered .card-number-grid {
+    display: block;
+  }
   .card-number-grid {
   margin-right: 0px;
   }
