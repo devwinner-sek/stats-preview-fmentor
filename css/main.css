@@ -1,0 +1,179 @@
+/*Include fonts police*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend+Deca:wght@200;400&display=swap");
+/*-------- Body style --------------- */
+
+*{
+   border: 1px solid red;
+}
+
+body {
+  background-color: #0a0c1c;
+}
+
+/*Body and global card*/
+.card-container, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display";
+}
+
+.card-container {
+  width: 100%;
+  padding: 0px;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container .card-centered {
+  width: 1110px;
+  height: 446px;
+  background: #1B1937;
+  box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Card Grid*/
+}
+
+.card-container .card-centered .content-grid-left {
+  color: #FFFFFF;
+  padding: 44px;
+}
+
+.card-container .card-centered .title-grid {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.card-container .card-centered .content-grid-right {
+  width: 950px;
+  height: 446px;
+  border-radius: 0px 8px 8px 0px;
+  background: #8f68a5 url("../images/image-header-mobile.jpg");
+  background-blend-mode: overlay;
+}
+
+.card-container .card-centered .color-violet {
+  color: #AB5CDB;
+}
+
+.card-container .card-centered .description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-bottom: 72px;
+}
+
+.card-container .card-centered .card-number {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+  padding-bottom: 12%;
+  display: block;
+}
+
+.card-container .card-centered .card-number-info {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  display: block;
+  padding-bottom: 2%;
+  margin-right: 4%;
+}
+.card-container .card-centered .card-number-grid {
+  display: inline-block;
+}
+.card-number-grid {
+margin-right: 52px;
+}
+/*design for smartphones*/
+@media(max-width: 450px) and (max-width: 800px) {
+
+  
+  .card-container, body {
+    margin: 0;
+    padding-top: 22px;
+  }
+  .card-container .card-centered .content-grid-left
+  {
+     padding: 0px;
+  }
+  .content-center
+  {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .card-container .card-centered
+  {
+    width: 85%;
+    height: 80rem;
+    background: #1B1937;
+    box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-header-mobile
+  {
+    padding-top: 0px;
+    width: 100%;
+    height: 240px;
+    background: #8f68a5 url("../images/image-header-mobile.jpg");
+    background-blend-mode: overlay;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .card-container .card-centered .card-number {
+    display: block;
+  }
+  .card-container .card-centered .card-number-info {
+    
+    display: block;
+  }
+  .card-container .card-centered .card-number-grid {
+    display: block;
+  }
+  .card-number-grid {
+  margin-right: 0px;
+  }
+  .content-grid-right, .content-grid-left  
+  {
+    display: none;
+    text-align: center;
+  }
+  .content-grid-right
+  {
+    display: none;
+  }
+  .content-grid-left
+  {
+    display: block;
+  }
+  
+
+  }
